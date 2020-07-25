@@ -24,9 +24,9 @@ async function byCountries(){
         const deaths = theCountries.data[0].Deaths
         const confirmed = theCountries.data[0].Confirmed
         const recovered = theCountries.data[0].Recovered
-        data.push(deaths, confirmed, recovered)
+        
         console.log(theCountries)
-        await console.log(data)
+       console.log(`${countries} has number of deaths as ${deaths}, confirmed ${confirmed},recovered ${recovered}`)
     }
 
     catch{
