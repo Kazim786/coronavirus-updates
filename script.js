@@ -39,9 +39,9 @@ async function byCountries(){
 
 function showResults(){
     if (countries !== null){
-        results.innerHTML = `<strong>${countries}</strong> has number of deaths as <emphasize>${deaths}</emphasize>, confirmed cases numbering <emphasize>${confirmed}</emphasize>, recovered people as the following number: <emphasize>${recovered}</emphasize>. `
+        results.innerText = `<strong>${countries}</strong> has number of deaths as <emphasize>${deaths}</emphasize>, confirmed cases numbering <emphasize>${confirmed}</emphasize>, recovered people as the following number: <emphasize>${recovered}</emphasize>. `
     } else {
-        results.innerHTML = 'Enter a name of a Valid Country'
+        results.innerText = 'Enter a name of a Valid Country'
     }
 
 }
