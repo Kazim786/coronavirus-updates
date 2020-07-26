@@ -7,7 +7,7 @@
 
 // const countries = document.getElementById('countries').value
 
-const results = document.getElementsByClassName('results')
+const results = document.getElementsById('results')
 
 const submitBtn = document.getElementById('submit')
 
