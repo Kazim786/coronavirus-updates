@@ -59,7 +59,7 @@ function showResults(){
 
 //Add Event Listener
 
-submitBtn.addEventListener('click', () => {
-    byCountries()
+submitBtn.addEventListener('click', async () => {
+    await byCountries()
     showResults()
 })
