@@ -7,7 +7,7 @@
 
 // const countries = document.getElementById('countries').value
 
-const results = document.getElementsById('results')
+const results = document.getElementById('results')
 
 const submitBtn = document.getElementById('submit')
 
@@ -39,9 +39,9 @@ async function byCountries(){
 
 function showResults(){
     if (countries !== null){
-        return results.innerText = `${countries} has number of deaths as <strong>${deaths}</strong>, confirmed <strong>${confirmed}</strong>,recovered <strong>${recovered}</strong>`
+        return results.innerHTML = `${countries} has number of deaths as <strong>${deaths}</strong>, confirmed <strong>${confirmed}</strong>,recovered <strong>${recovered}</strong>`
     } else {
-        results.innerText = 'Enter a name of a Valid Country'
+        results.innerHTML = 'Enter a name of a Valid Country'
     }
 
 }
