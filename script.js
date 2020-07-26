@@ -29,8 +29,15 @@ async function byCountries(){
         const confirmed = theCountries.data[0].Confirmed
         const recovered = theCountries.data[0].Recovered
         
-        console.log(theCountries)
+        // console.log(theCountries)
        console.log(`Today ${countries} has number of deaths as ${deaths}, confirmed cases ${confirmed},recovered ${recovered}`)
+       if (countries !== null){
+       const results = document.getElementById('results')
+       results.innerHTML = `Today ${countries} has number of deaths as ${deaths}, confirmed cases ${confirmed}, recovered ${recovered}`
+       } 
+        else {
+        results.innerHTML = 'Enter a name of a Valid Country'
+        }
     }
 
     catch{
@@ -39,27 +46,12 @@ async function byCountries(){
     
 }
 
-//Show results function:
 
-function showResults(){
-    if (countries !== null){
-        // const span = document.createElement('span')
-        // span.innerHTML = `Today ${countries} has Number of deaths as <strong>${deaths}</strong>, Number confirmed cases is <strong>${confirmed}</strong>, Number of people recovered is <strong>${recovered}</strong>`
-
-        // container.appendChild('span')
-        const results = document.getElementById('results')
-
-        results.innerHTML = `Today ${countries} has Number of deaths as <strong>${deaths}</strong>, Number confirmed cases is <strong>${confirmed}</strong>, Number of people recovered is <strong>${recovered}</strong>`
-    } else {
-        results.innerHTML = 'Enter a name of a Valid Country'
-    }
-
-}
 
 
 //Add Event Listener
 
 submitBtn.addEventListener('click', async () => {
     await byCountries()
-    showResults()
+    
 })
