@@ -9,7 +9,7 @@
 
 // const countries = document.getElementById('countries').value
 
-const results = document.getElementById('results')
+// const results = document.getElementById('results')
 
 const submitBtn = document.getElementById('submit')
 
@@ -47,7 +47,7 @@ function showResults(){
         // span.innerHTML = `Today ${countries} has Number of deaths as <strong>${deaths}</strong>, Number confirmed cases is <strong>${confirmed}</strong>, Number of people recovered is <strong>${recovered}</strong>`
 
         // container.appendChild('span')
-
+        const results = document.getElementById('results')
 
         results.innerHTML = `Today ${countries} has Number of deaths as <strong>${deaths}</strong>, Number confirmed cases is <strong>${confirmed}</strong>, Number of people recovered is <strong>${recovered}</strong>`
     } else {
