@@ -26,7 +26,7 @@ async function byCountries(){
         const recovered = theCountries.data[0].Recovered
         
         console.log(theCountries)
-       console.log(`Today ${countries} has number of deaths as ${deaths}, confirmed ${confirmed},recovered ${recovered}`)
+       console.log(`Today ${countries} has number of deaths as ${deaths}, confirmed cases ${confirmed},recovered ${recovered}`)
     }
 
     catch{
@@ -39,7 +39,7 @@ async function byCountries(){
 
 function showResults(){
     if (countries !== null){
-        results.innerHTML = `Today ${countries} has number of deaths as <strong>${deaths}</strong>, confirmed <strong>${confirmed}</strong>,recovered <strong>${recovered}</strong>`
+        results.innerHTML = `Today ${countries} has Number of deaths as <strong>${deaths}</strong>, Number confirmed cases is <strong>${confirmed}</strong>, Number of people recovered is <strong>${recovered}</strong>`
     } else {
         results.innerHTML = 'Enter a name of a Valid Country'
     }
