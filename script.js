@@ -1,3 +1,5 @@
+
+
 // The api: https://api.covid19api.com/live/country/south-africa
 
 // const theCountries = await axios.get(`https://api.covid19api.com/live/country/south-africa`)
@@ -10,6 +12,8 @@
 const results = document.getElementById('results')
 
 const submitBtn = document.getElementById('submit')
+
+const container = document.querySelector('container')
 
 const data = []
 console.log(countries)
@@ -39,6 +43,12 @@ async function byCountries(){
 
 function showResults(){
     if (countries !== null){
+        // const span = document.createElement('span')
+        // span.innerHTML = `Today ${countries} has Number of deaths as <strong>${deaths}</strong>, Number confirmed cases is <strong>${confirmed}</strong>, Number of people recovered is <strong>${recovered}</strong>`
+
+        // container.appendChild('span')
+
+
         results.innerHTML = `Today ${countries} has Number of deaths as <strong>${deaths}</strong>, Number confirmed cases is <strong>${confirmed}</strong>, Number of people recovered is <strong>${recovered}</strong>`
     } else {
         results.innerHTML = 'Enter a name of a Valid Country'
