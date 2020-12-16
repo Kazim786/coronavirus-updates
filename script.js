@@ -55,3 +55,17 @@ submitBtn.addEventListener('click', async () => {
     await byCountries()
     
 })
+
+//**********
+//Simple DOM manipulation and addEventListener example:
+
+// let name = document.getElementById("name")
+
+// // console.log(name.value);
+
+// let button = document.getElementById("submit")
+
+// //Add a function inside the parameter of addEventListener
+// button.addEventListener("click", () => {
+//  console.log(name.value) 
+// })
